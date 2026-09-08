@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Karla:wght@400;500;600;700&family=Lato:wght@400;700&family=Manrope:wght@400;500;600;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@400;500;700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&family=Vollkorn:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --container-padding: 32px;
+  --card-padding: 24px;
+}
+
+/* =========================
+  Tailwind Theme
+========================= */
+
+@theme {
+  /* Main */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
+  --color-primary-light: var(--primary-light);
+  --color-primary-inverse: var(--primary-inverse);
+
+  /* Backgrounds */
+  --color-bg-main: var(--bg-main);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-layout: var(--bg-layout);
+
+  /* Text */
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-light: var(--text-light);
+  --color-text-inverse: var(--text-inverse);
+
+  /* Spacing */
+  --spacing-container: var(--container-padding);
+  --spacing-card: var(--card-padding);
+
+  /* Fonts */
+  --font-heading: var(--heading-font);
+  --font-text: var(--text-font);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container { /* xsm */
+    padding: 15px;
+    margin: 0 auto;
+}
+@media (min-width: 768px) { /* sm */
+    .container {
+    width: 750px;
+    }
+}
+@media (min-width: 992px) { /* md */
+    .container {
+    width: 970px;
+    }
+}
+@media (min-width: 1200px) { /* lg */
+    .container {
+    width: 1170px;
+    }
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
