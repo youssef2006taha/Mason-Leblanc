@@ -1,4 +1,4 @@
-import Photographer from "./section/photographer"
+import Photographer from "./section/Photographer"
 import Stats from "./section/Stats"
 import Work from "../CommonSections/Work"
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import MainSec2 from '../CommonSections/MainSec2'
 import PortfolioImgs from '../CommonSections/PortfolioImgs'
-import Work from '../CommonSections/work'
+import Work from '../CommonSections/Work'
 import img from '../../assets/portfolio.jpg'
 
 function Protfolio() {
