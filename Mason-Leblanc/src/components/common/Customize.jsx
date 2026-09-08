@@ -10,15 +10,13 @@ function Customize() {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="h-full">
+    <div>
       {show && (
         <div
           onClick={() => setShow(false)}
           className="fixed inset-0 z-40"
         />
       )}
-
-      <div className="h-screen w-fit">
 
         <div
           className={`w-50 sm:w-75 fixed z-50 top-0 right-0 h-screen flex flex-col bg-bg-layout ${
@@ -196,7 +194,7 @@ function Customize() {
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 }
